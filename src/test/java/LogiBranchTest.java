@@ -8,32 +8,32 @@ public class LogiBranchTest {
     }
 
     @Test
-    public void testInvalidDistance() {
+    public void LogiBranchTest1() {
         assertEquals(-1, calc(35, 10, "Gold"));
     }
 
     @Test
-    public void testInvalidMembership() {
+    public void LogiBranchTest2() {
         assertEquals(-1, calc(5, 10, "VIP"));
     }
 
     @Test
-    public void testStage1NoSurchargeNoDiscount() {
+    public void LogiBranchTest3() {
         assertEquals(15000, calc(1.5, 9, "Standard"));
     }
 
     @Test
-    public void testStage2PeakSilver() {
+    public void LogiBranchTest4() {
         assertEquals(32000, calc(4.0, 12.0, "Silver"));
     }
 
     @Test
-    public void testStage3PeakGold() {
+    public void LogiBranchTest5() {
         assertEquals(47500, calc(10.0, 18.0, "Gold"));
     }
 
     @Test
-    public void testStage3NoPeakStandard() {
+    public void LogiBranchTest6() {
         assertEquals(80000, calc(10.0, 22.0, "Standard"));
     }
 }
